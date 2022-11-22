@@ -84,7 +84,7 @@ const FetchProfile : React.FC<Props> = ({urlParams, query}) => {
               <div className="profile-divComponent">自己紹介: {profile.introduction}</div>
             </ul>
             <div className="profile-divButton">
-              <button 
+              <button
               className="profile-button"
               onClick={(e) => onClick(e)}>編集</button>
             </div>    
