@@ -5,4 +5,5 @@ COPY back/ ./
 
 WORKDIR ./main
 RUN go build -o /hackathon
+EXPOSE 8000
 CMD ["/hackathon"]
