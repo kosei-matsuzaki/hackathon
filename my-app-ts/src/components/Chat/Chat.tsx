@@ -5,8 +5,8 @@ import LinkToLogin from "../Link/LinkToLogin";
 import LinkToProfile from "../Link/LinkToProfile";
 import LinkToRanking from "../Link/LinkToRanking";
 import ChatList from "./componentsForChat/ChatList"
-import SendChat from "./componentsForChat/SendChat"
 import "../../css/Chat.css"
+import "../../css/Header.css"
 
 type chatLog = {
     id: string,
@@ -53,14 +53,22 @@ const Chat : React.FC = () => {
 
     return(
       <div>
+        <header>
+                <h1 className="h1">Contribute</h1>
+                <div className="div">
+                    <ul className="ul">
+                       <LinkToHome/>
+                       <LinkToProfile/>
+                       <LinkToRanking/>
+                       <LinkToLogin/>
+                    </ul>
+                </div>
+        </header>
+        <body>
         <div>
            <ChatList text={text} username={username.username} fetchChat={fetchChat}/>
-           <SendChat fetchChat={fetchChat} username={username.username}/>
         </div>
-        <LinkToHome/>
-        <LinkToProfile/>
-        <LinkToRanking/>
-        <LinkToLogin/>
+        </body>
       </div>
     );
 }

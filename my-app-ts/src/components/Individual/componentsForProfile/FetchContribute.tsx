@@ -1,9 +1,5 @@
 import { useHistory } from "react-router-dom";
 import React, {useState, useEffect} from "react";
-import LinkToChat from "../../Link/LinkToChat";
-import LinkToHome from "../../Link/LinkToHome"
-import LinkToLogin from "../../Link/LinkToLogin";
-import LinkToRanking from "../../Link/LinkToRanking";
 
 type Props = {
   urlParams: {
@@ -58,41 +54,39 @@ const FetchContribute : React.FC<Props> = ({urlParams, query}) => {
           <div className="profile-divTitle">
               ポイント状況
           </div>
-          <ul className="profile-ulProfile">
-            <div className="profile-divComponent">
-              送ったポイント:{contribute.contributeSent}pt
+          <div className="div-box">
+            <div className="profile-divProfile">
+              <div className="profile-divComponent">
+                送ったポイント: {contribute.contributeSent}pt
+              </div>
+              <div className="profile-divComponent">
+                受け取ったポイント: {contribute.contributeReceived}pt
+              </div>
             </div>
-            <div className="profile-divComponent">
-              受け取ったポイント:{contribute.contributeReceived}pt
-            </div>
-          </ul>
+          </div> 
           <div>
             <button 
-            className="profile-buttonBack"
-            onClick={(e) => onClick(e)}>戻る</button>
+              className="profile-buttonBack"
+              onClick={(e) => onClick(e)}>戻る</button>
           </div>
         </div>
       )
     }else if(query.v === 0){
       return(
-        <div>
-          <div className="profile-divAll">
+        <div className="profile-divAll">
             <div className="profile-divTitle">
                 ポイント状況
             </div>
-            <ul className="profile-ulProfile">
-              <div className="profile-divComponent">
-                送ったポイント:{contribute.contributeSent}pt
+            <div className="div-box">
+              <div className="profile-divProfile">
+                <div className="profile-divComponent">
+                  送ったポイント: {contribute.contributeSent}pt
+                </div>
+                <div className="profile-divComponent">
+                  受け取ったポイント: {contribute.contributeReceived}pt
+                </div>
               </div>
-              <div className="profile-divComponent">
-                受け取ったポイント:{contribute.contributeReceived}pt
-              </div>
-            </ul>
-          </div>
-          <LinkToHome/>
-          <LinkToChat/>
-          <LinkToRanking/>
-          <LinkToLogin/>
+            </div>
         </div>
       )
     }else{

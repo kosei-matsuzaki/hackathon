@@ -46,7 +46,8 @@ const Receiver : React.FC = () => {
 
     return(
         <div className="ranking-divAll">
-            <div className="ranking-divTitle">受信ポイント</div>
+          <div className="ranking-divTitle">受信ポイント</div>
+          <div className="div-box">
             <div className="ranking-divList">
             {receiverRanking.map(rank => {
                 return(
@@ -64,7 +65,8 @@ const Receiver : React.FC = () => {
                     </div>
                 )
             })}
-            </div>           
+            </div> 
+          </div>          
         </div>
     )
 }

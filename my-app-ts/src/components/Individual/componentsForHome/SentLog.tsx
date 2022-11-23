@@ -56,15 +56,17 @@ const ReceivedLog :React.FC<Props> = ({urlParams}) => {
 
     if (send.length == 0) {
       return(
-      <div className="home-logDiv-all">
-            <div className="home-logDiv-title">
+        <div className="home-logDiv-all">
+          <div className="home-logDiv-title">
                 送信記録
             </div>
+            <div className="div-box">
             <div className="home-logDiv-list">
                  <div>
                     送信記録はありません         
                  </div>
             </div>
+          </div>
         </div>
     )}else{
     return(
@@ -72,7 +74,8 @@ const ReceivedLog :React.FC<Props> = ({urlParams}) => {
             <div className="home-logDiv-title">
                 送信記録
             </div>
-            <div className="home-logDiv-list">
+            <div className="div-box">
+              <div className="home-logDiv-list">
                 {send.map(log => {
                     return(
                         <ul
@@ -88,14 +91,11 @@ const ReceivedLog :React.FC<Props> = ({urlParams}) => {
                                <div className="home-logDiv-ForButton">
                                  <DeleteLog id={log.id}/>
                                </div>                
-                            </div>
-                            
-
-                           
-                           
+                            </div>           
                         </ul>
                     )
                 })}
+              </div>
             </div>
         </div>
     )}

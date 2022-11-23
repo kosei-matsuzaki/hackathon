@@ -7,14 +7,16 @@
     width: 100%;
     font-size: 18px;
     border-bottom: solid 2px black;
+    margin-bottom:30px;
+    display: flex;
 }
-.profile-ulProfile{
-    padding:15px;
+.profile-divProfile{
+    margin:15px auto 15px 30px;
     border-left:solid 1px gray;
 }
 
 .profile-divComponent{
-    padding:10px
+    padding: 10px 0 10px 15px;
 }
 
 .profile-input{
@@ -29,38 +31,26 @@
     margin-left: 5px
 }
 
-.profile-divButton{
-    height: 50px;
+.profile-divForButton{
+    margin: 0 10px 0 auto;
 }
 
 .profile-button{
-    width: 100px;
-    height: 40px;
+    width: 70px;
     font-size: 16px;
     cursor: pointer;
-    display: inline-block;
-    padding:5px;
-    text-decoration: none;
-    background: #7d7f85;
-    color: #fff;
-    border-bottom: solid 4px #4e5053;
-    border-radius: 3px;
+    text-align: center;
+    color: black;
 }
 
 .profile-button:hover{
-    background:#9fa1a9;
-}
-
-.profile-button:active{
-    transform: translateY(4px);
-    border-bottom: none;
-    margin-bottom: 4px;
+    color:#5b5959;
 }
 
 .profile-buttonBack{
     width: 100px;
     height: 40px;
-    margin-left: 50px;
+    margin-top: 30px;
     font-size: 16px;
     cursor: pointer;
     display: inline-block;

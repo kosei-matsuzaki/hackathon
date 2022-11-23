@@ -49,17 +49,19 @@ const SendChat : React.FC<Props> = ({fetchChat, username}) => {
     return(
       
         <div className="chat-divSend">
+          <div className="chat-divInput">
             <input 
               className="chat-inputSend"
               placeholder="メッセージを入力してください"
               type = "text"
               value={message}
               onChange={onChangeText}/>
-            <div className="chat-divForButton">
-              <button
+          </div>
+          <div className="chat-divForButtonSend">
+            <button
               className="chat-buttonSend"
               onClick={(e) => onClickSend(e)}>送信</button>
-            </div>           
+          </div>           
         </div>
     )
 }

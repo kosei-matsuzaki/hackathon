@@ -22,7 +22,7 @@ const EditProfile : React.FC<Props> = ({profile}) => {
     }
 
     //onClick関数
-    const onClick = async(e:React.MouseEvent<HTMLButtonElement>) => {
+    const onClick = async(e:React.MouseEvent<HTMLElement>) => {
         e.preventDefault();
         if (!nickname) {
           alert("ニックネームを入力してください");
@@ -63,38 +63,47 @@ const EditProfile : React.FC<Props> = ({profile}) => {
     }
 
     return(
+    <div>
+      <header>
+        <h1 className="h1">Contribute</h1>
+      </header>
+      <body>
       <div className="profile-divAll">
         <div className="profile-divTitle">
-                プロフィール
-        </div>
-          <ul className = "profile-ulProfile">
-            <div className="profile-divComponent">ユーザー名: {profile.username}</div>
-            <div className="profile-divComponent">ニックネーム: 
-              <input
-              className="profile-input"
-              placeholder="ニックネームを入力してください"
-              type="text"
-              value={nickname}
-              onChange={(e) => onChangeNickname(e)}
-              />
+          プロフィール
+            <div className="profile-divForButton">
+              <div 
+              className="profile-button"
+              onClick={(e) => onClick(e)}>編集完了
+              </div>
             </div>
-            <div className="profile-divComponent">自己紹介: 
-              <input
-              className="profile-input"
-              placeholder="自己紹介文を入力してください"
-              type="text"
-              value={introduction}
-              onChange={(e) => onChangeIntroduction(e)}
-            />
-            </div>
-          </ul>
-          <div className="profile-divButton">
-            <button 
-            className="profile-button"
-            onClick={(e) => onClick(e)}>編集完了
-            </button>
-          </div>        
         </div>
+          <div className="div-box">
+            <div className = "profile-divProfile">
+              <div className="profile-divComponent">ユーザー名: {profile.username}</div>
+              <div className="profile-divComponent">ニックネーム: 
+                <input
+                className="profile-input"
+                placeholder="ニックネームを入力してください"
+                type="text"
+                value={nickname}
+                onChange={(e) => onChangeNickname(e)}
+                />
+              </div>
+              <div className="profile-divComponent">自己紹介: 
+                <input
+                className="profile-input"
+                placeholder="自己紹介文を入力してください"
+                type="text"
+                value={introduction}
+                onChange={(e) => onChangeIntroduction(e)}
+                />
+              </div>
+            </div>    
+          </div>       
+        </div>
+        </body>
+      </div>
     )
 }
 

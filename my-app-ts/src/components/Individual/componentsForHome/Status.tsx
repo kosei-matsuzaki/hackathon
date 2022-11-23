@@ -42,11 +42,12 @@ const Status : React.FC<Props> = ({urlParams}) => {
     },[])
 
     return(
+      <div className="div-box">   
         <div className="home-statusDiv">
             <div>あなたの送った合計ポイントは {contribute.contributeSent} ptです。</div>
             <div>あなたの受け取った合計ポイントは {contribute.contributeReceived} ptです。</div>
         </div>
-
+      </div>
     )
 }
 

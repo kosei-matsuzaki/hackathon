@@ -47,9 +47,10 @@ const Server : React.FC = () => {
     return(
       <div className="ranking-divAll">
         <div className="ranking-divTitle">送信ポイント</div>
-        <div className="ranking-divList">
-         {serverRanking.map(rank => {
-          return(
+        <div className="div-box">
+          <div className="ranking-divList">
+          {serverRanking.map(rank => {
+            return(
               <div 
               className="ranking-divComponent"
               key={rank.username}> 
@@ -62,8 +63,9 @@ const Server : React.FC = () => {
                   {rank.contributeSent} pt
                 </div>  
               </div>
-          )
-      })}
+            )
+          })}
+        </div>
       </div>           
   </div>
     )

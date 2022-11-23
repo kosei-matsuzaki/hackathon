@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import DeleteChat from "./DeleteChat";
 import EditChat from "./EditChat";
+import SendChat from "./SendChat"
 import {useHistory} from "react-router-dom";
 
 type chatLog = {
@@ -43,8 +44,9 @@ const ChatList : React.FC<Props> = ({text, username, fetchChat}) => {
     return(
         <div className="chat-divAll">
             <div className="chat-divTitle">チャット一覧</div>
-            <div className="chat-divList">
-            {text.map(log => {
+            <div className="div-box">
+              <div className="chat-divList">
+              {text.map(log => {
                 const logId = log.id
                 //編集時
                 if (status === 1 && logId === id) {
@@ -85,11 +87,13 @@ const ChatList : React.FC<Props> = ({text, username, fetchChat}) => {
                               onClick={(e) => onClickForProfile(e, log.username)} 
                               className="chat-divUsername">{log.username}: </div>
                               <div className="chat-divTextMessage">{log.textMessage}</div>
-                           </div>      
+                           </div>     
                         </div>
                     )
                 }
                 })}
+                </div>
+                <SendChat fetchChat={fetchChat} username={username}/>
             </div>
         </div>
     );

@@ -55,39 +55,45 @@ const ReceivedLog : React.FC<Props> = ({urlParams}) => {
 
     if (receive.length === 0) {
       return(
-      <div className="home-logDiv-all">
-            <div className="home-logDiv-title">
-                受信記録
-            </div>
-            <div className="home-logDiv-list">
-                 <div>
-                    受信記録はありません         
-                 </div>
-            </div>
-        </div>
-    )}else{
-    return(
         <div className="home-logDiv-all">
             <div className="home-logDiv-title">
                 受信記録
             </div>
+            <div className="div-box">
+              <div className="home-logDiv-list">
+                 <div>
+                    受信記録はありません         
+                 </div>
+              </div>
+            </div>
+        </div>
+    )}else{
+    return(
+      <div className="home-logDiv-all">
+        <div className="home-logDiv-title">
+          受信記録
+        </div>
+        <div className="div-box">
             <div className="home-logDiv-list">
                 {receive.map(log => {
                     return(
-                        <ul 
+                      <ul 
                         className="home-logUl" 
                         key={log.id}>
+                        <div className="home-logDiv-inUl">
                           <div className="home-logDiv-combine">
                             <div className="home-logDiv-componentPass">
                               <span onClick={(e) => onClick(e, log.serverName)}>{log.serverName}</span> さんから {log.sendPoint} pt受け取りました。
                             </div>
-                           <div className="home-logDiv-componentMessage">{log.message}</div>
-                          </div>      
-                        </ul>
+                            <div className="home-logDiv-componentMessage">{log.message}</div>
+                          </div> 
+                        </div>     
+                      </ul>
                     )
                 })}
             </div>
         </div>
+      </div>
     )}
 }
 
