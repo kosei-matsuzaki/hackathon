@@ -17,9 +17,7 @@ const LinkToRanking = () => {
     }
 
     return(
-            <div>
-                <button onClick={(e) => {onClickForRanking(e)}}>ランキング</button>
-            </div>
+       <button onClick={(e) => {onClickForRanking(e)}}>ランキング</button>
     )
 }
 export default LinkToRanking

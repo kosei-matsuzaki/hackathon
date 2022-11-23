@@ -18,9 +18,7 @@ const LinkToProfile = () => {
     }
 
     return(
-        <div>
-            <button onClick={(e) => {onClickForProfile(e)}}>プロフィール</button>
-        </div>
+        <button onClick={(e) => {onClickForProfile(e)}}>プロフィール</button>
     )
 }
 

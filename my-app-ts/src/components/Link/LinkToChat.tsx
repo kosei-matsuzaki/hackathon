@@ -17,9 +17,7 @@ const LinkToChat = () => {
     }
 
     return(
-        <div>
-            <button onClick={(e) => {onClickForChat(e)}}>チャット</button>
-        </div>
+        <button onClick={(e) => {onClickForChat(e)}}>チャット</button>
     )
 }
 
