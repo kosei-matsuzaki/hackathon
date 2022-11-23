@@ -4,6 +4,7 @@
 
 header{
     width:100%;
+    height:50px;
     padding: 30px 4% 10px;
     background-color: darkcyan;
     position: fixed;
@@ -19,30 +20,26 @@ header{
 }
 
 .ul{
-    margin:0;
+    margin:0 0 0 15px;
     display:flex;
     list-style: none;
 }
  
-.li{
-    margin:0 0 0 15px;
-    font-size: 15px;
-}
-
 .div{
     margin: 0 0 0 auto;
 }
 
-.a{
-    
-    color: rgb(0, 0, 0);
+.a{ 
+    height: 50px;
+    width: 80px;
+    color: rgb(0, 0, 0)
 }
 
 .a:hover{
-    background-color: aqua;
+    background-color: rgb(53, 129, 129);
 }
 
 body{
-    margin-top: 50px;
+    margin-top: 80px;
 }
 

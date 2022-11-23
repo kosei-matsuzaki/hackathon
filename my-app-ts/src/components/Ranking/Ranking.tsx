@@ -23,10 +23,10 @@ const Ranking : React.FC = () => {
                 <h1 className="h1">Contribute</h1>
                 <div className="div">
                     <ul className="ul">
-                        <li className="li"><LinkToHome/></li>
-                        <li className="li"><LinkToProfile/></li>
-                        <li className="li"><LinkToChat/></li>
-                        <li className="li"><LinkToLogin/> </li>  
+                       <LinkToHome/>
+                       <LinkToProfile/>
+                       <LinkToChat/>
+                       <LinkToLogin/>
                     </ul>
                 </div>
             </header>
