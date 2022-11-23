@@ -14,10 +14,6 @@ import (
 var Db *sql.DB
 
 func init() {
-	err := godotenv.Load(".env")
-	if err != nil {
-		log.Fatalf("fail: godotenv, %v\n", err)
-	}
 	// DB接続のための準備
 	mysqlUser := os.Getenv("MYSQL_USER")
 	mysqlPwd := os.Getenv("MYSQL_PWD")
