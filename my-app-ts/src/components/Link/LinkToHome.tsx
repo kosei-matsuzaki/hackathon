@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory, useParams } from "react-router-dom";
+import "../../css/Header.css"
 
 const LinkToHome = () => {
 
@@ -8,7 +9,7 @@ const LinkToHome = () => {
     const urlParams = useParams<{username:string}>()
 
     //go home
-    const onClickForHome = (e:React.MouseEvent<HTMLButtonElement>) => {
+    const onClickForHome = (e:React.MouseEvent<HTMLElement>) => {
         e.preventDefault();
         history.push({
             pathname:"/individual/" + urlParams.username,
@@ -17,7 +18,7 @@ const LinkToHome = () => {
     }
 
     return(
-        <button onClick={(e) => {onClickForHome(e)}}>ホームへ戻る</button>
+        <a className = "a" onClick={(e) => {onClickForHome(e)}}>ホームへ戻る</a>
     )
 }
 

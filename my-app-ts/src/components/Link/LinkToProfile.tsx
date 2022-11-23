@@ -1,6 +1,6 @@
-import { url } from "inspector";
 import React from "react";
 import { useHistory, useParams } from "react-router-dom";
+import "../../css/Header.css"
 
 const LinkToProfile = () => {
     
@@ -9,7 +9,7 @@ const LinkToProfile = () => {
     const urlParams = useParams<{username:string}>()
 
     //go to profile
-    const onClickForProfile = (e:React.MouseEvent<HTMLButtonElement>) => {
+    const onClickForProfile = (e:React.MouseEvent<HTMLElement>) => {
         e.preventDefault();
         history.push({
             pathname:"/profile/" + urlParams.username,
@@ -18,7 +18,7 @@ const LinkToProfile = () => {
     }
 
     return(
-        <button onClick={(e) => {onClickForProfile(e)}}>プロフィール</button>
+        <a className = "a" onClick={(e) => {onClickForProfile(e)}}>プロフィール</a>
     )
 }
 

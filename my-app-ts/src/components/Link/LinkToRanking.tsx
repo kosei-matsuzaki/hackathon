@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory, useParams} from "react-router-dom";
+import "../../css/Header.css"
 
 const LinkToRanking = () => {
     
@@ -8,7 +9,7 @@ const LinkToRanking = () => {
      const urlParams = useParams<{username:string}>()
 
     //go to ranking
-    const onClickForRanking = (e:React.MouseEvent<HTMLButtonElement>) => {
+    const onClickForRanking = (e:React.MouseEvent<HTMLElement>) => {
         e.preventDefault();
         history.push({
             pathname:"/ranking/" + urlParams.username,
@@ -17,7 +18,7 @@ const LinkToRanking = () => {
     }
 
     return(
-       <button onClick={(e) => {onClickForRanking(e)}}>ランキング</button>
+       <a className = "a" onClick={(e) => {onClickForRanking(e)}}>ランキング</a>
     )
 }
 export default LinkToRanking

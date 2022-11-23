@@ -18,7 +18,7 @@ const Ranking : React.FC = () => {
     }, [])
     
     return(
-        <div>
+        <div className="divForAll">
             <header>
                 <h1 className="h1">Contribute</h1>
                 <div className="div">
