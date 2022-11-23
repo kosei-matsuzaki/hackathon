@@ -78,14 +78,16 @@ const FetchContribute : React.FC<Props> = ({urlParams, query}) => {
                 ポイント状況
             </div>
             <div className="div-box">
-              <div className="profile-divProfile">
+              <ul className="profile-ulProfile">
                 <div className="profile-divComponent">
-                  送ったポイント: {contribute.contributeSent}pt
+                  <div className="profile-divName">送ったポイント</div>
+                  <div className="profile-divText">{contribute.contributeSent}pt</div>
                 </div>
                 <div className="profile-divComponent">
-                  受け取ったポイント: {contribute.contributeReceived}pt
+                  <div className="profile-divName">受け取ったポイント</div>
+                  <div className="profile-divText">{contribute.contributeReceived}pt</div>
                 </div>
-              </div>
+              </ul>
             </div>
         </div>
       )

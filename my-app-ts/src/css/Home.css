@@ -11,70 +11,66 @@
 
 .home-sendDiv{
     margin:2%;
-    padding-left: 50px;
+    /* margin:2% 2% 0 2%; */
+    /* border: solid 1px #35339f; */
 }
 
 .home-sendForm{
-    display: contents;
+    padding: 10px 0 10px 0;
+    display: flex;
+    flex-flow: column; 
+    justify-content: center;
 }
 
 .home-sendFormDiv{
-    padding-bottom: 5px;
+    margin:2px auto 2px auto;
+    width: 750px;
+    /* border: solid 1px #35339f; */
 }
 
-.home-sendButtonDiv{
-    height: 60px;
-}
 .home-sendLabel{
     display: inline-block;
-   width:300px;
-   border-left: solid 5px #5250e0;
-   padding-left: 15px;
-   line-height: 55px;
-   font-size: 16px;
+    width:270px;
+    margin:5px auto 5px 0;
+    border-left: solid 4px #35339f;
+    padding-left: 15px;
+    line-height: 45px;
+    font-size: 16px;
 }
 
 .home-sendInput{
-    background-color:aliceblue;
+    background-color:rgb(255, 255, 255);
     font-size: 16px;
-    padding: 5px;
-    width: 350px;
+    padding-left: 5px;
+    margin:auto 0 auto auto;
+    width: 450px;
     height: 35px;
     outline: none;
-    border: solid 2px rgb(71, 70, 70);
+    border: solid 1px lightgray;
     border-radius: 5px;
 }
 
-.home-sendSelect{
-    background-color:aliceblue;
-    font-size: 16px;
-    padding: 5px;
-    width: 363px;
-    height: 40px;
-    outline: none;
-    border: solid 2px rgb(71, 70, 70);
-    border-radius: 5px;
+.home-sendInput:focus{
+    border: solid 2px rgb(33, 98, 183);
 }
 
 .home-sendButton{
-    width: 200px;
-    height: 50px;
+    width: 150px;
+    height: 40px;
     font-size: 16px;
     cursor: pointer;
     display: inline-block;
-    margin-top:15px;
-    padding: 10px 15px;
-    text-decoration: none;
+    margin:15px auto 0 300px;
     background: #668ad8;
     color: #fff;
-    border-bottom: solid 4px #627295;
+    border:none;
+    box-shadow: 0 3px 2px dimgray;
     border-radius: 5px;
 }
 
 .home-sendButton:active{
-    transform: translateY(4px);
-    border-bottom: none;
-    margin-bottom: 4px;
+    transform: translateY(3px);
+    box-shadow: none;
 }
 
 .home-sendButton:hover{
@@ -83,7 +79,7 @@
 
 .home-logDiv-all{
     padding:5px 0 5px 0;
-    margin:0;
+    margin:0 0 20px 0;
 }
 
 .home-logDiv-title{
@@ -95,8 +91,11 @@
 }
 
 .home-logDiv-list{
-    margin: 0;
+    margin-left:30px;
+    margin-right:30px;
     height: 380px;
+    background-color:rgb(248, 248, 248);
+    box-shadow: inset 3px 3px 5px rgb(222, 224, 229), inset -3px -3px 5px rgb(222, 224, 229);
     overflow: auto;
 }
 .home-logDiv-list::-webkit-scrollbar{
@@ -128,6 +127,15 @@
     margin: 0
 }
 
+.home-span{
+    font-weight:bold;
+    cursor: pointer;
+}
+
+.home-span:hover{
+    color: dimgray;
+}
+
 .home-logDiv-componentMessage{
     margin-left:60px;
     padding-top:10px;
@@ -141,18 +149,18 @@
     display: inline-block;
     padding:5px;
     text-decoration: none;
-    background: #e44d36;
+    background: #d25f4e;
     color: #fff;
-    border-bottom: solid 3px #754544;
+    box-shadow: 0 2px 1px dimgray;
+    border: none;
     border-radius: 3px;
 }
 
 .home-logButton:active{
-    transform: translateY(4px);
-    border-bottom: none;
-    margin-bottom: 3px;
+    transform: translateY(2px);
+    box-shadow: none;
 }
 
 .home-logButton:hover{
-    background:#dd8172;
+    background:#db8072;
 }

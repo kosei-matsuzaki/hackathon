@@ -11,12 +11,20 @@
     display: flex;
 }
 .profile-divProfile{
-    margin:15px auto 15px 30px;
-    border-left:solid 1px gray;
+    margin:15px 30px 15px 30px;   
 }
 
 .profile-divComponent{
-    padding: 10px 0 10px 15px;
+    padding: 10px 0 10px 0px;
+}
+
+.profile-divName{
+    padding: 5px 0 5px 10px;
+    border-left:solid 2px gray;
+}
+
+.profile-divText{
+    padding: 0 0 0 40px;
 }
 
 .profile-input{
@@ -50,7 +58,7 @@
 }
 
 .profile-button:hover{
-    color:#5b5959;
+    color:dimgray;
 }
 
 .profile-buttonBack{

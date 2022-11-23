@@ -41,6 +41,10 @@ const SendContribute : React.FC<Props> = ({urlParams}) => {
         alert("ポイントを入力してください");
         return;
       }
+      if (point < 0) {
+        alert("正の値を入力してください");
+        return;
+      }
       try{
            const result = await fetch("https://hackathon-vfujicgnka-uc.a.run.app/send/contribute?username=" + urlParams.username, {
             method: "POST",
@@ -94,8 +98,8 @@ const SendContribute : React.FC<Props> = ({urlParams}) => {
             <div className="home-sendFormDiv">
               <label className="home-sendLabel">送信相手を選んでください</label>
               <select
-                onChange={onChangeTo}
-                className="home-sendSelect">
+                className="home-sendInput"
+                onChange={onChangeTo}>
                   <option defaultValue={""}></option>
                   {users.map(user => {
                     return(
@@ -113,7 +117,7 @@ const SendContribute : React.FC<Props> = ({urlParams}) => {
               value={point}
               onChange={(e) => onChangePoint(e)}/>
             </div>  
-            <div className="home-sendFromDiv">
+            <div className="home-sendFormDiv">
               <label className="home-sendLabel">メッセージを入力してください</label>
               <input
               className="home-sendInput"
@@ -123,11 +127,11 @@ const SendContribute : React.FC<Props> = ({urlParams}) => {
               onChange={(e) => onChangeText(e)}
               />
             </div>
-            <div className="home-sendButtonDiv">
+            <div className="home-sendFormDiv">
               <button
                 className="home-sendButton"
                 onClick={(e) => onClickForSend(e)}>送信</button>
-            </div>     
+            </div>   
           </form>
         </div>
     )

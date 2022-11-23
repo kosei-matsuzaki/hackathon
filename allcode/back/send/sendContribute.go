@@ -36,7 +36,7 @@ func SendContribute(w http.ResponseWriter, r *http.Request) {
 		}
 		contribute.ServerName = name
 
-		if contribute.SendPoint == 0 || utf8.RuneCountInString(contribute.Message) > 100 {
+		if contribute.SendPoint <= 0 || utf8.RuneCountInString(contribute.Message) > 100 {
 			log.Printf("fail: post_condition_in_login")
 			w.WriteHeader(http.StatusBadRequest)
 			return

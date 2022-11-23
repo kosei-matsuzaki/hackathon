@@ -96,6 +96,7 @@ const Login : React.FC = () => {
 
     //UI返却
     return(
+      <div className="user-divAll">
         <div className = "user-component">
           <div className="user-div">
             <label className="user-label">ユーザー名</label>
@@ -115,17 +116,20 @@ const Login : React.FC = () => {
                   value = {password}
                   onChange = {handleChangePassword}/>      
           </div>
-          <div className="user-div">
-            <button 
+          <div className="user-divForButton">
+            <div className="user-div">
+              <button 
                className = "user-buttonForLogin"
                onClick={(e) => onClick(e)}>Login</button>       
-          </div>  
-          <div className="user-div">
-            <button
+            </div>  
+            <div className="user-div">
+              <button
               className="user-buttonForRegister" 
               onClick={(e) => onClickForRegister(e)}>新規登録画面へ</button>
-          </div>              
+            </div> 
+          </div>             
         </div>
+      </div>
     )}
 
 export default Login

@@ -128,16 +128,18 @@ const Register : React.FC = () => {
                   value = {passwordCheck}
                   onChange = {handleChangePasswordCheck}/>
           </div> 
-          <div className="user-div">
-            <button 
+          <div className="user-divForButton">
+            <div className="user-div">
+              <button 
               className="user-buttonForRegister"
               onClick={(e) => onClick(e)}>登録</button>
-          </div>         
-          <div className="user-div">
-            <button
+            </div>         
+            <div className="user-div">
+              <button
               className="user-buttonForLogin" 
               onClick={(e) => onClickForLogin(e)}>Login画面に戻る</button>
-          </div> 
+            </div> 
+          </div>
         </div>
     )
   }

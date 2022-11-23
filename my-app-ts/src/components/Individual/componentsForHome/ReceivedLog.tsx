@@ -83,7 +83,7 @@ const ReceivedLog : React.FC<Props> = ({urlParams}) => {
                         <div className="home-logDiv-inUl">
                           <div className="home-logDiv-combine">
                             <div className="home-logDiv-componentPass">
-                              <span onClick={(e) => onClick(e, log.serverName)}>{log.serverName}</span> さんから {log.sendPoint} pt受け取りました。
+                              <span className="home-span" onClick={(e) => onClick(e, log.serverName)}>{log.serverName}</span> さんから {log.sendPoint} pt受け取りました。
                             </div>
                             <div className="home-logDiv-componentMessage">{log.message}</div>
                           </div> 

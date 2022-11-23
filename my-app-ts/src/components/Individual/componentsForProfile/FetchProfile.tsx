@@ -71,9 +71,18 @@ const FetchProfile : React.FC<Props> = ({urlParams, query}) => {
                 </div>
                 <div className="div-box">
                   <ul className="profile-ulProfile">
-                    <div className="profile-divComponent">ユーザー名: {profile.username}</div>
-                    <div className="profile-divComponent">ニックネーム: {profile.nickname}</div>
-                    <div className="profile-divComponent">自己紹介: {profile.introduction}</div>
+                    <div className="profile-divComponent">
+                      <div className="profile-divName">ユーザー名</div>
+                      <div className="profile-divText">{profile.username}</div>
+                    </div>
+                    <div className="profile-divComponent">
+                      <div className="profile-divName">ニックネーム</div>
+                      <div className="profile-divText">{profile.nickname}</div>
+                    </div>
+                    <div className="profile-divComponent">
+                      <div className="profile-divName">自己紹介</div>
+                      <div className="profile-divText">{profile.introduction}</div>
+                    </div>
                   </ul>
                 </div>
               </div>
@@ -114,9 +123,18 @@ const FetchProfile : React.FC<Props> = ({urlParams, query}) => {
                 </div>
                 <div className="div-box">
                   <div className="profile-divProfile">
-                    <div className="profile-divComponent">ユーザー名: {profile.username}</div>
-                    <div className="profile-divComponent">ニックネーム: {profile.nickname}</div>
-                    <div className="profile-divComponent">自己紹介: {profile.introduction}</div>
+                    <div className="profile-divComponent">
+                      <div className="profile-divName">ユーザー名</div>
+                      <div className="profile-divText">{profile.username}</div>
+                    </div>
+                    <div className="profile-divComponent">
+                      <div className="profile-divName">ニックネーム</div>
+                      <div className="profile-divText">{profile.nickname}</div>
+                    </div>
+                    <div className="profile-divComponent">
+                      <div className="profile-divName">自己紹介</div>
+                      <div className="profile-divText">{profile.introduction}</div>
+                    </div>
                   </div>
                 </div>
               </div>
