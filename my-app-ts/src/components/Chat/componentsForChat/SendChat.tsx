@@ -28,7 +28,7 @@ const SendChat : React.FC<Props> = ({fetchChat, username}) => {
       }
       
       try {
-            const result = await fetch("http://localhost:8000/send/chat?username=" + username, {
+            const result = await fetch("https://hackathon-vfujicgnka-uc.a.run.app/send/chat?username=" + username, {
               method: "POST",
               body: JSON.stringify({
                 textMessage: message

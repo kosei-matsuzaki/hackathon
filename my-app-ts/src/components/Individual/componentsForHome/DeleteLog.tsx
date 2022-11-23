@@ -11,7 +11,7 @@ const DeleteLog : React.FC<Props> = ({id}) => {
 
         
         try {
-            const result = await fetch("http://localhost:8000/remove/contribute", {
+            const result = await fetch("https://hackathon-vfujicgnka-uc.a.run.app/remove/contribute", {
               method: "POST",
               body: JSON.stringify({
                 id: id

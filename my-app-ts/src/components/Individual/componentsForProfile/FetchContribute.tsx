@@ -18,7 +18,7 @@ const FetchContribute : React.FC<Props> = ({urlParams, query}) => {
     const [contribute, setContribute] = useState<Points>({contributeSent:0, contributeReceived:0})
 
     //url作成
-    const fetchUrlPoint :string = "http://localhost:8000/individual/status?username=" + urlParams.username
+    const fetchUrlPoint :string = "https://hackathon-vfujicgnka-uc.a.run.app/individual/status?username=" + urlParams.username
 
     //GET points
     const fetchContribute = async () => {

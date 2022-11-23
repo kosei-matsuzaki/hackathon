@@ -69,7 +69,7 @@ const SendContribute : React.FC<Props> = ({urlParams}) => {
 
     const fetchUsers = async () => {
       try {
-        const res = await fetch("http://localhost:8000/individual/others?username=" + urlParams.username);
+        const res = await fetch("https://hackathon-vfujicgnka-uc.a.run.app/individual/others?username=" + urlParams.username);
         if (!res.ok) {
           throw Error(`Failed to fetch users: ${res.status}`);
         }

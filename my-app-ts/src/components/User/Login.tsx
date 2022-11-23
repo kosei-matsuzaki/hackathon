@@ -59,7 +59,7 @@ const Login : React.FC = () => {
     
         //POST
         try {
-          const result = await fetch("http://localhost:8000/login", {
+          const result = await fetch("https://hackathon-vfujicgnka-uc.a.run.app/login", {
             method: "POST",
             body: JSON.stringify({
               username: username,

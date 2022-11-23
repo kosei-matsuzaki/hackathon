@@ -43,7 +43,7 @@ const EditProfile : React.FC<Props> = ({profile}) => {
           return;
         }
         try{
-            const result = await fetch("http://localhost:8000/edit/profile?username=" + profile.username ,{
+            const result = await fetch("https://hackathon-vfujicgnka-uc.a.run.app/edit/profile?username=" + profile.username ,{
               method: "POST",
               body: JSON.stringify({
                 nickname: nickname,

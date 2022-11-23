@@ -30,7 +30,7 @@ const EditChat : React.FC<Props> = ({log}) => {
           return;
         }
         try{
-            const result = await fetch("http://localhost:8000/edit/chat" ,{
+            const result = await fetch("https://hackathon-vfujicgnka-uc.a.run.app/edit/chat" ,{
               method: "POST",
               body: JSON.stringify({
                 id: log.id,

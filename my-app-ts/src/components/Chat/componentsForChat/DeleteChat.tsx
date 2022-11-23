@@ -12,7 +12,7 @@ const DeleteChat : React.FC<Props> = ({id, fetchChat}) => {
 
         
         try {
-            const result = await fetch("http://localhost:8000/remove/chat", {
+            const result = await fetch("https://hackathon-vfujicgnka-uc.a.run.app/remove/chat", {
               method: "POST",
               body: JSON.stringify({
                 id: id

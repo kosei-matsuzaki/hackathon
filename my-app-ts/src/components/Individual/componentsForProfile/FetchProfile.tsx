@@ -33,7 +33,7 @@ const FetchProfile : React.FC<Props> = ({urlParams, query}) => {
     const [profile, setProfile] = useState<Profiling>({username:"", nickname:"", introduction:""})
 
     //url作成
-    const fetchUrlProfile :string = "http://localhost:8000/individual/profile?username=" + urlParams.username
+    const fetchUrlProfile :string = "https://hackathon-vfujicgnka-uc.a.run.app/individual/profile?username=" + urlParams.username
     
     //GET profile
     const fetchProfile = async () => {

@@ -56,7 +56,7 @@ const Register : React.FC = () => {
     
         //POST
         try {
-          const result = await fetch("http://localhost:8000/register", {
+          const result = await fetch("https://hackathon-vfujicgnka-uc.a.run.app/register", {
             method: "POST",
             body: JSON.stringify({
               username: username,

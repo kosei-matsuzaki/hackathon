@@ -8,7 +8,7 @@ type Ranking = {
 
 const Server : React.FC = () => {
 
-    const fetchUrl = "http://localhost:8000/global/ranking/server"
+    const fetchUrl = "https://hackathon-vfujicgnka-uc.a.run.app/global/ranking/server"
 
     const [serverRanking,setServerRanking] = useState<Ranking[]>([])
 

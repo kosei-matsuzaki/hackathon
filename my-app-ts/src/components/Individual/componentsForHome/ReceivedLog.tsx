@@ -19,7 +19,7 @@ const ReceivedLog : React.FC<Props> = ({urlParams}) => {
     //receive定義
     const [receive, setReceive] = useState<Receive[]>([])
 
-    const fetchUrl = "http://localhost:8000/individual/log/received?username=" + urlParams.username
+    const fetchUrl = "https://hackathon-vfujicgnka-uc.a.run.app/individual/log/received?username=" + urlParams.username
 
     //Get received
     const fetchLogReceived = async() => {

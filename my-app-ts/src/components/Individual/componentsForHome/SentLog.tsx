@@ -20,7 +20,7 @@ const ReceivedLog :React.FC<Props> = ({urlParams}) => {
     //send定義
     const [send, setSend] = useState<Sent[]>([])
 
-    const fetchUrl = "http://localhost:8000/individual/log/sent?username=" + urlParams.username
+    const fetchUrl = "https://hackathon-vfujicgnka-uc.a.run.app/individual/log/sent?username=" + urlParams.username
 
     //Get sent
     const fetchLogSent = async () => {

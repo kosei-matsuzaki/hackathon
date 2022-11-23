@@ -37,7 +37,7 @@ func OtherUsers(w http.ResponseWriter, r *http.Request) {
 		}
 
 		//usersに代入
-		var users []string
+		var users = make([]string, 0)
 		for rows.Next() {
 			var u string
 			if err := rows.Scan(&u); err != nil {
