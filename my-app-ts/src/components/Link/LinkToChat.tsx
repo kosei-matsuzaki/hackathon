@@ -18,7 +18,7 @@ const LinkToChat = () => {
     }
 
     return(
-        <div className = "a" onClick={(e) => {onClickForChat(e)}}>チャット</div>
+        <div className = "div-small" onClick={(e) => {onClickForChat(e)}}>チャット</div>
     )
 }
 

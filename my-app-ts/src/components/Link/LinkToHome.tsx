@@ -18,7 +18,7 @@ const LinkToHome = () => {
     }
 
     return(
-        <div className = "a" onClick={(e) => {onClickForHome(e)}}>ホームへ戻る</div>
+        <div className = "div-small" onClick={(e) => {onClickForHome(e)}}>ホームへ戻る</div>
     )
 }
 

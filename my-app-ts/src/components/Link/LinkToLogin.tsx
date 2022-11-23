@@ -15,7 +15,7 @@ const LinkToLogin = () => {
     }
 
     return(
-        <div className = "a" onClick={(e) => {onClickForSignOut(e)}}>サインアウト</div>
+        <div className = "div-small" onClick={(e) => {onClickForSignOut(e)}}>サインアウト</div>
     )
 }
 export default LinkToLogin
