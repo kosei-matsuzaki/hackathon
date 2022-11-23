@@ -65,7 +65,7 @@ const EditChat : React.FC<Props> = ({log}) => {
         </div>
         <div className="chat-divForButton">
               <button 
-              className="chat-buttonEdit"
+              className="chat-buttonEditEnd"
               onClick={(e) => onClickForEdit(e)}>編集完了</button>
         </div>    
       </div>

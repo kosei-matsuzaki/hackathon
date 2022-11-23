@@ -43,68 +43,103 @@
     margin: 0 30px 0 0;
 }
 
+.chat-divCombineForOthers{
+    margin: 0 180px 0 0;
+}
+
 .chat-divForButton{
     display: flex;
+    align-items: center;
     margin: 0 30px 0 auto;
 }
 
 .chat-buttonEdit{
     margin-right:7px;
-    width: 75px;
-    height: 40px;
+    width: 50px;
+    height: 30px;
     font-size: 14px;
     cursor: pointer;
     display: inline-block;
     padding:5px;
     text-decoration: none;
-    background: #33936b;
+    background: #459876;
     color: #fff;
-    border-bottom: solid 4px #1f563c;
+    box-shadow: 0 2px 1px dimgray;
+    border:none;
     border-radius: 3px;
 }
 .chat-buttonEdit:hover{
-    background:#5dab85;
+    background:#69b590;
 }
 
 .chat-buttonEdit:active{
-    transform: translateY(4px);
-    border-bottom: none;
-    margin-bottom: 4px;
+    transform: translateY(2px);
+    box-shadow: none;
 }
 
-.chat-buttonDelete{
-    width: 75px;
-    height: 40px;
+.chat-buttonEditEnd{
+    margin-right:7px;
+    width: 100px;
+    height: 30px;
     font-size: 14px;
     cursor: pointer;
     display: inline-block;
     padding:5px;
     text-decoration: none;
-    background: #cd4a4a;
+    background: #459876;
     color: #fff;
-    border-bottom: solid 4px #854545;
+    box-shadow: 0 2px 1px dimgray;
+    border:none;
+    border-radius: 3px;
+}
+.chat-buttonEditEnd:hover{
+    background:#69b590;
+}
+
+.chat-buttonEditEnd:active{
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+.chat-buttonDelete{
+    width: 50px;
+    height: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+    padding:5px;
+    text-decoration: none;
+    background: #ca6565;
+    color: #fff;
+    box-shadow: 0 2px 1px dimgray;
+    border:none;
     border-radius: 3px;
 }
 .chat-buttonDelete:hover{
-    background:#ee8787;
+    background:#e18989;
 }
 
 .chat-buttonDelete:active{
-    transform: translateY(4px);
-    border-bottom: none;
-    margin-bottom: 4px;
+    transform: translateY(2px);
+    box-shadow: none;
 }
 
 .chat-inputEdit{
     background-color:rgb(255, 255, 255);
     font-size: 16px;
-    padding: 5px;
-    width: 350px;
+    padding-left: 5px;
+    width: 450px;
     height: 25px;
     outline: none;
-    border: solid 2px rgb(78, 77, 77);
-    border-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1px lightgrey;
     margin-left: 5px
+}
+
+.chat-inputEdit:focus{
+    border-bottom: solid 1px rgb(33, 98, 183);
 }
 
 .chat-buttonSend{
@@ -116,27 +151,32 @@
     text-decoration: none;
     background: #6c80bc;
     color: #fff;
-    border-bottom: solid 4px #4e5053;
-    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 1px dimgray;
+    border-radius: 20px;
 }
 .chat-buttonSend:hover{
     background:#9cabe8;
 }
 
 .chat-buttonSend:active{
-    transform: translateY(4px);
-    border-bottom: none;
-    margin-bottom: 4px;
+    transform: translateY(2px);
+    box-shadow: none;
 }
 
 .chat-inputSend{
     background-color:rgb(255, 255, 255);
     font-size: 16px;
+    padding-left: 5px;
     width: 450px;
     height: 30px;
     outline: none;
-    border: solid 2px rgb(78, 77, 77);
+    border: solid 1px lightgray;
     border-radius: 5px;
+}
+
+.chat-inputSend:focus{
+    border: solid 2px rgb(33, 98, 183);
 }
 
 .chat-divSend{
@@ -150,6 +190,7 @@
 }
 
 .chat-divForButtonSend{
+    height: 40px;
     margin: 0 30px 0 0;
 }
 

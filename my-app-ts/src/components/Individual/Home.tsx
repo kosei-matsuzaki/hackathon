@@ -3,6 +3,7 @@ import { useParams, useHistory } from "react-router-dom";
 import Status from "./componentsForHome/Status"
 import ReceivedLog from "./componentsForHome/ReceivedLog"
 import SentLog from "./componentsForHome/SentLog"
+import LinkToHome from "../Link/LinkToHome";
 import LinkToChat from "../Link/LinkToChat"
 import LinkToRanking from "../Link/LinkToRanking";
 import LinkToLogin from "../Link/LinkToLogin";
@@ -29,15 +30,16 @@ const Home : React.FC = () => {
                 <h1 className="h1">Contribute</h1>
                 <div className="div">
                     <ul className="ul">
-                       <LinkToProfile/>
-                       <LinkToChat/>
+                       <LinkToHome/>
                        <LinkToRanking/>
+                       <LinkToChat/>
+                       <LinkToProfile/>
                        <LinkToLogin/>
                     </ul>
                 </div>
         </header>
         <body>
-          <div>
+          <div className="home-divAll">
             <Status urlParams = {urlParams}/>
             <SendContribute urlParams = {urlParams}/>
             <ReceivedLog urlParams = {urlParams}/>

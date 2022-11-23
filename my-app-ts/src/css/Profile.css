@@ -22,13 +22,19 @@
 .profile-input{
     background-color:rgb(255, 255, 255);
     font-size: 16px;
-    padding: 5px;
-    width: 350px;
+    padding-left: 5px;
+    width: 450px;
     height: 25px;
     outline: none;
-    border: solid 2px rgb(78, 77, 77);
-    border-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1px lightgray;
     margin-left: 5px
+}
+
+.profile-input:focus{
+    border-bottom: solid 1px rgb(33, 98, 183);
 }
 
 .profile-divForButton{
@@ -48,8 +54,8 @@
 }
 
 .profile-buttonBack{
-    width: 100px;
-    height: 40px;
+    width: 80px;
+    height: 35px;
     margin-top: 30px;
     font-size: 16px;
     cursor: pointer;
@@ -58,7 +64,8 @@
     text-decoration: none;
     background: #7d7f85;
     color: #fff;
-    border-bottom: solid 4px #4e5053;
+    box-shadow: 0 2px 1px dimgray;
+    border: none;
     border-radius: 3px;
 }
 
@@ -67,7 +74,6 @@
 }
 
 .profile-buttonBack:active{
-    transform: translateY(4px);
-    border-bottom: none;
-    margin-bottom: 4px;
+    transform: translateY(2px);
+    box-shadow: none;
 }

@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import { useParams, useHistory} from "react-router-dom";
 import LinkToHome from "../Link/LinkToHome";
 import LinkToLogin from "../Link/LinkToLogin";
+import LinkToChat from "../Link/LinkToChat";
 import LinkToProfile from "../Link/LinkToProfile";
 import LinkToRanking from "../Link/LinkToRanking";
 import ChatList from "./componentsForChat/ChatList"
@@ -23,7 +24,7 @@ const Chat : React.FC = () => {
     
     const [text, setText] = useState<chatLog[]>([])
 
-    const fetchUrl = "http://localhost:8000/global/chat"
+    const fetchUrl = "https://hackathon-vfujicgnka-uc.a.run.app//global/chat"
     //chat取得
     const fetchChat = async () => {
         try {
@@ -58,8 +59,9 @@ const Chat : React.FC = () => {
                 <div className="div">
                     <ul className="ul">
                        <LinkToHome/>
-                       <LinkToProfile/>
                        <LinkToRanking/>
+                       <LinkToChat/>
+                       <LinkToProfile/> 
                        <LinkToLogin/>
                     </ul>
                 </div>

@@ -1,5 +1,9 @@
-.home-statusDiv{
+.home-divAll{
     margin:2%;
+    padding: 15px;
+}
+
+.home-statusDiv{
     padding :10px; 
     text-align: center;
     font-size: 18px;
@@ -79,7 +83,7 @@
 
 .home-logDiv-all{
     padding:5px 0 5px 0;
-    margin:2%;
+    margin:0;
 }
 
 .home-logDiv-title{
@@ -91,7 +95,7 @@
 }
 
 .home-logDiv-list{
-    margin:0;
+    margin: 0;
     height: 380px;
     overflow: auto;
 }
@@ -107,7 +111,7 @@
     padding-bottom: 10px;
     margin-left:15px;
     margin-right:15px;
-    font-size: 15px;
+    font-size: 16px;
     display: flex;
     align-items: center;
 }

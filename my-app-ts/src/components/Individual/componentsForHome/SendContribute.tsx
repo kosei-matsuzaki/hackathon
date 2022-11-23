@@ -42,7 +42,7 @@ const SendContribute : React.FC<Props> = ({urlParams}) => {
         return;
       }
       try{
-           const result = await fetch("http://localhost:8000/send/contribute?username=" + urlParams.username, {
+           const result = await fetch("https://hackathon-vfujicgnka-uc.a.run.app/send/contribute?username=" + urlParams.username, {
             method: "POST",
             body: JSON.stringify({
               receiverName: to,

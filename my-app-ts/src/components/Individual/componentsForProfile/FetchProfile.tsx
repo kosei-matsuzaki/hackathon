@@ -5,6 +5,7 @@ import LinkToHome from "../../Link/LinkToHome"
 import LinkToLogin from "../../Link/LinkToLogin";
 import LinkToRanking from "../../Link/LinkToRanking";
 import "../../../css/Header.css";
+import LinkToProfile from "../../Link/LinkToProfile";
 
 type Props = {
   urlParams: {
@@ -94,8 +95,9 @@ const FetchProfile : React.FC<Props> = ({urlParams, query}) => {
                 <div className="div">
                     <ul className="ul">
                        <LinkToHome/>
+                       <LinkToRanking/>
                        <LinkToChat/>
-                       <LinkToRanking/>   
+                       <LinkToProfile/>   
                        <LinkToLogin/>
                     </ul>
                 </div>

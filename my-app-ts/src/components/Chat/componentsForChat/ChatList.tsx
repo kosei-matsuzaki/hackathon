@@ -82,10 +82,10 @@ const ChatList : React.FC<Props> = ({text, username, fetchChat}) => {
                         <div
                         className="chat-divComponent" 
                         key={log.id}>
-                           <div className="chat-divCombine">
+                           <div className="chat-divCombineForOthers">
                               <div
                               onClick={(e) => onClickForProfile(e, log.username)} 
-                              className="chat-divUsername">{log.username}: </div>
+                              className="chat-divUsername">{log.username}</div>
                               <div className="chat-divTextMessage">{log.textMessage}</div>
                            </div>     
                         </div>

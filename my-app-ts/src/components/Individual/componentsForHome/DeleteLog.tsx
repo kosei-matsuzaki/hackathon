@@ -9,7 +9,6 @@ const DeleteLog : React.FC<Props> = ({id}) => {
     //delete関数
     const onClickDelete = async(e:React.MouseEvent<HTMLButtonElement>) => {
 
-        
         try {
             const result = await fetch("https://hackathon-vfujicgnka-uc.a.run.app/remove/contribute", {
               method: "POST",

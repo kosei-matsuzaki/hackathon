@@ -8,6 +8,7 @@ import Receiver from "./componentsForRanking/Receiver"
 import Server from "./componentsForRanking/Server"
 import "../../css/Ranking.css"
 import "../../css/Header.css"
+import LinkToRanking from "../Link/LinkToRanking";
 
 const Ranking : React.FC = () => {
 
@@ -24,8 +25,9 @@ const Ranking : React.FC = () => {
                 <div className="div">
                     <ul className="ul">
                        <LinkToHome/>
-                       <LinkToProfile/>
+                       <LinkToRanking/>
                        <LinkToChat/>
+                       <LinkToProfile/>
                        <LinkToLogin/>
                     </ul>
                 </div>
