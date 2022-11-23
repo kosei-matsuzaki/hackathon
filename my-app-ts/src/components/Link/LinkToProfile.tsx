@@ -18,7 +18,7 @@ const LinkToProfile = () => {
     }
 
     return(
-        <a className = "a" onClick={(e) => {onClickForProfile(e)}}>プロフィール</a>
+        <div className = "a" onClick={(e) => {onClickForProfile(e)}}>プロフィール</div>
     )
 }
 

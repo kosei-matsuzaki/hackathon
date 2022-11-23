@@ -18,7 +18,7 @@ const LinkToRanking = () => {
     }
 
     return(
-       <a className = "a" onClick={(e) => {onClickForRanking(e)}}>ランキング</a>
+       <div className = "a" onClick={(e) => {onClickForRanking(e)}}>ランキング</div>
     )
 }
 export default LinkToRanking
