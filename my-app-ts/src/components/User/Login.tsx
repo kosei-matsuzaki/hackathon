@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useCallback,useEffect } from "react";
-import { useLocation, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import "../../css/User.css"
 
 const Login : React.FC = () => {
