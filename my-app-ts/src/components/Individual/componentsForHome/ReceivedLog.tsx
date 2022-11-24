@@ -61,7 +61,7 @@ const ReceivedLog : React.FC<Props> = ({urlParams}) => {
             </div>
             <div className="div-box">
               <div className="home-logDiv-list">
-                 <div>
+                 <div className="home-logDiv-noLog">
                     受信記録はありません         
                  </div>
               </div>
