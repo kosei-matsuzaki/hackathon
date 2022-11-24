@@ -64,7 +64,7 @@ const FetchContribute : React.FC<Props> = ({urlParams, query}) => {
               </div>
             </div>
           </div> 
-          <div>
+          <div className="profile-divForBack">
             <button 
               className="profile-buttonBack"
               onClick={(e) => onClick(e)}>戻る</button>

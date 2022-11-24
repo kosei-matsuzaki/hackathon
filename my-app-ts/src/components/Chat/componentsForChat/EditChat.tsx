@@ -1,5 +1,4 @@
 import React, {useState} from "react"
-import ts from "typescript"
 
 type chatLog = {
   id: string,
@@ -17,6 +16,11 @@ const EditChat : React.FC<Props> = ({log}) => {
     const onChangeText = (e:React.ChangeEvent<HTMLInputElement>) => {
         setMessage(e.target.value)
     }
+
+    const onClickForQuit = (e:React.MouseEvent<HTMLButtonElement>) => {
+      e.preventDefault();
+      window.location.reload();
+  }
 
     const onClickForEdit = async(e:React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
@@ -64,7 +68,10 @@ const EditChat : React.FC<Props> = ({log}) => {
           </div>
         </div>
         <div className="chat-divForButton">
-              <button 
+            <button 
+              className="chat-buttonEditEnd"
+              onClick={(e) => onClickForQuit(e)}>取り消し</button>
+            <button 
               className="chat-buttonEditEnd"
               onClick={(e) => onClickForEdit(e)}>編集完了</button>
         </div>    

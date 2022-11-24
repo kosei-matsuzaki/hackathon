@@ -137,13 +137,12 @@
 }
 
 .home-logDiv-componentMessage{
-    margin-left:60px;
-    padding-top:10px;
+    margin: 10px auto 0 60px;
 }
 
 .home-logButton{
-    width: 75px;
-    height: 40px;
+    width: 60px;
+    height: 30px;
     font-size: 14px;
     cursor: pointer;
     display: inline-block;

@@ -9,8 +9,11 @@ const DeleteChat : React.FC<Props> = ({id, fetchChat}) => {
 
     //delete関数
     const onClickDelete = async(e:React.MouseEvent<HTMLButtonElement>) => {
+      
+        if(!window.confirm("削除しますか？")){
+        return;
+        }
 
-        
         try {
             const result = await fetch("https://hackathon-vfujicgnka-uc.a.run.app/remove/chat", {
               method: "POST",

@@ -21,8 +21,13 @@ const EditProfile : React.FC<Props> = ({profile}) => {
         setIntroduction(e.target.value)
     }
 
+    const onClickForQuit = (e:React.MouseEvent<HTMLElement>) => {
+        e.preventDefault();
+        window.location.reload();
+    }
+
     //onClick関数
-    const onClick = async(e:React.MouseEvent<HTMLElement>) => {
+    const onClickForEdit = async(e:React.MouseEvent<HTMLElement>) => {
         e.preventDefault();
         
         //@ts-ignore
@@ -67,7 +72,11 @@ const EditProfile : React.FC<Props> = ({profile}) => {
             <div className="profile-divForButton">
               <div 
               className="profile-button"
-              onClick={(e) => onClick(e)}>編集完了
+              onClick={(e) => onClickForQuit(e)}>編集取り消し
+              </div>
+              <div 
+              className="profile-button"
+              onClick={(e) => onClickForEdit(e)}>編集完了
               </div>
             </div>
         </div>
