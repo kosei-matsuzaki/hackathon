@@ -4,7 +4,7 @@ import LinkToChat from "../../Link/LinkToChat";
 import LinkToHome from "../../Link/LinkToHome"
 import LinkToLogin from "../../Link/LinkToLogin";
 import LinkToRanking from "../../Link/LinkToRanking";
-import "../../../css/Header.css";
+import "../../../css/General.css";
 import LinkToProfile from "../../Link/LinkToProfile";
 
 type Props = {
@@ -64,8 +64,7 @@ const FetchProfile : React.FC<Props> = ({urlParams, query}) => {
             <header>
                 <h1 className="h1">Contribute</h1>
             </header>
-            <body>
-              <div className="profile-divAll">
+            <div className="profile-divAll">
                 <div className="profile-divTitle">
                   プロフィール
                 </div>
@@ -85,8 +84,7 @@ const FetchProfile : React.FC<Props> = ({urlParams, query}) => {
                     </div>
                   </ul>
                 </div>
-              </div>
-            </body>      
+              </div>      
           </div>
         )}
       //edit
@@ -111,8 +109,7 @@ const FetchProfile : React.FC<Props> = ({urlParams, query}) => {
                     </ul>
                 </div>
             </header>
-            <body>
-              <div className="profile-divAll">
+            <div className="profile-divAll">
                 <div className="profile-divTitle">
                   プロフィール
                   <div className="profile-divForButton">
@@ -137,8 +134,7 @@ const FetchProfile : React.FC<Props> = ({urlParams, query}) => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </body>    
+            </div>   
           </div>
         )}else{
           return(

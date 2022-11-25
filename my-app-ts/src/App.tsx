@@ -2,8 +2,8 @@ import {Switch, Route} from 'react-router-dom';
 import Move from "./components/User/Move"
 import Login from "./components/User/Login";
 import Register from "./components/User/Register"
-import Home from "./components/Individual/Home"
-import Profile from './components/Individual/Profile';
+import Home from "./components/Home/Home"
+import Profile from './components/Profile/Profile';
 import Chat from "./components/Chat/Chat"
 import Ranking from "./components/Ranking/Ranking"
 

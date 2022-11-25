@@ -7,7 +7,7 @@ import LinkToProfile from "../Link/LinkToProfile";
 import Receiver from "./componentsForRanking/Receiver"
 import Server from "./componentsForRanking/Server"
 import "../../css/Ranking.css"
-import "../../css/Header.css"
+import "../../css/General.css"
 import LinkToRanking from "../Link/LinkToRanking";
 
 const Ranking : React.FC = () => {
@@ -32,7 +32,6 @@ const Ranking : React.FC = () => {
                     </ul>
                 </div>
             </header>
-            <body>
             <div className="ranking-divAll">
                <div className="ranking-divTitle">
                   ランキング一覧
@@ -42,7 +41,6 @@ const Ranking : React.FC = () => {
                   <Server/>       
                 </div>
             </div>
-            </body>
         </div>
     )
 }

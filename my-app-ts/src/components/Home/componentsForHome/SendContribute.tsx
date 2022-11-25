@@ -34,7 +34,7 @@ const SendContribute : React.FC<Props> = ({urlParams}) => {
       }
       //@ts-ignore
       if ([...message].length > 200) {
-        alert("メッセージは２００文字未満にしてください");
+        alert("メッセージは２００文字以下にしてください");
         return;
       }
       if (point == 0) {
@@ -103,7 +103,7 @@ const SendContribute : React.FC<Props> = ({urlParams}) => {
                   <option defaultValue={""}></option>
                   {users.map(user => {
                     return(
-                      <option value={user}>{user}</option>
+                      <option key = {user} value={user}>{user}</option>
                     )
                   }
                   )}

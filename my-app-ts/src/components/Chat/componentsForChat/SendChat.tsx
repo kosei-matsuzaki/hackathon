@@ -23,7 +23,7 @@ const SendChat : React.FC<Props> = ({fetchChat, username}) => {
       }
       //@ts-ignore
       if ([...message].length > 200) {
-        alert("メッセージは２００文字未満にしてください");
+        alert("メッセージは２００文字以下にしてください");
         return;
       }
       

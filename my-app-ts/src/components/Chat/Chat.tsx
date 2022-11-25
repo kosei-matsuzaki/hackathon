@@ -7,7 +7,7 @@ import LinkToProfile from "../Link/LinkToProfile";
 import LinkToRanking from "../Link/LinkToRanking";
 import ChatList from "./componentsForChat/ChatList"
 import "../../css/Chat.css"
-import "../../css/Header.css"
+import "../../css/General.css"
 
 type chatLog = {
     id: string,
@@ -53,8 +53,8 @@ const Chat : React.FC = () => {
     }, [])
 
     return(
-      <div>
-        <header>
+        <div>
+          <header>
                 <h1 className="h1">Contribute</h1>
                 <div className="div">
                     <ul className="ul">
@@ -65,13 +65,11 @@ const Chat : React.FC = () => {
                        <LinkToLogin/>
                     </ul>
                 </div>
-        </header>
-        <body>
-        <div>
+          </header>
+          <div>
            <ChatList text={text} username={username.username} fetchChat={fetchChat}/>
+          </div>
         </div>
-        </body>
-      </div>
     );
 }
 

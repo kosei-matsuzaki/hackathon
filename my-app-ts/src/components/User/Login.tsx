@@ -44,7 +44,7 @@ const Login : React.FC = () => {
         }
     //@ts-ignore
         if ([...username].length > 50) {
-          alert("ユーザー名は５０文字未満にしてください");
+          alert("ユーザー名は５０文以下にしてください");
           return;
         }
         if (!password) {
@@ -53,7 +53,7 @@ const Login : React.FC = () => {
           }
     //@ts-ignore
         if ([...password].length > 50 || [...password].length < 6) {
-            alert("パスワードは６文字以上かつ５０文字未満にしてください");
+            alert("パスワードは６文字以上かつ５０文字以下にしてください");
             return;
         }
     

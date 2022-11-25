@@ -16,6 +16,9 @@ type Props = {
     fetchChat : () => Promise<void>
 }
 
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 
 const ChatList : React.FC<Props> = ({text, username, fetchChat}) => {
 

@@ -32,12 +32,12 @@ const EditProfile : React.FC<Props> = ({profile}) => {
         
         //@ts-ignore
         if ([...nickname].length > 50) {
-          alert("ニックネームは５０文字未満にしてください");
+          alert("ニックネームは５０文字以下にしてください");
           return;
         }
         //@ts-ignore
         if ([...introduction].length > 200) {
-          alert("自己紹介文は２００文字未満にしてください");
+          alert("自己紹介文は２００文字以下にしてください");
           return;
         }
         try{

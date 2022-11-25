@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory, useParams } from "react-router-dom";
-import "../../css/Header.css"
+import "../../css/General.css"
 
 const LinkToProfile = () => {
     

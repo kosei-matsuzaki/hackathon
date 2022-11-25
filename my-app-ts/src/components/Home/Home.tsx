@@ -10,7 +10,7 @@ import LinkToLogin from "../Link/LinkToLogin";
 import LinkToProfile from "../Link/LinkToProfile";
 import SendContribute from "./componentsForHome/SendContribute"
 import "../../css/Home.css"
-import "../../css/Header.css"
+import "../../css/General.css"
 
 const Home : React.FC = () => {
 
@@ -26,7 +26,7 @@ const Home : React.FC = () => {
     //要素表示
     return(
       <div>
-        <header>
+          <header>
                 <h1 className="h1">Contribute</h1>
                 <div className="div">
                     <ul className="ul">
@@ -37,18 +37,14 @@ const Home : React.FC = () => {
                        <LinkToLogin/>
                     </ul>
                 </div>
-        </header>
-        <body>
+          </header>
           <div className="home-divAll">
             <Status urlParams = {urlParams}/>
             <SendContribute urlParams = {urlParams}/>
             <ReceivedLog urlParams = {urlParams}/>
             <SentLog urlParams = {urlParams}/>
           </div>
-        </body>
       </div>
-      
-      
     )
 }
 
